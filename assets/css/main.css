@@ -1994,15 +1994,16 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border-radius: 0.25em;
-		border: solid 1px rgba(255, 255, 255, 0.15);
-		background: rgba(255, 255, 255, 0.05);
+		/* border: solid 1px rgba(255, 255, 255, 0.15); */
+		/* background: rgba(255, 255, 255, 0.05); */
 		margin: 0 0 2em 0;
+		
 	}
 
 		.features section {
-			padding: 3.5em 3em 1em 7em ;
-			width: 50%;
-			border-top: solid 1px rgba(255, 255, 255, 0.15);
+			padding: 1.5em 3em 1em 3em ;
+			width: 50%; /*100% for one column*/
+			/* border-top: solid 1px rgba(255, 255, 255, 0.15); */
 			position: relative;
 		}
 
@@ -2011,7 +2012,7 @@ input, select, textarea {
 			}
 
 			.features section:nth-child(2n) {
-				border-left: solid 1px rgba(255, 255, 255, 0.15);
+				/* border-left: solid 1px rgba(255, 255, 255, 0.15); */
 			}
 
 			.features section .icon {
@@ -2026,11 +2027,11 @@ input, select, textarea {
 				-moz-transform: scale(1);
 				-webkit-transform: scale(1);
 				-ms-transform: scale(1);
-				transform: scale(1);
+				transform: scale(0.75); /* size of icons 1 -> 100% */
 				position: absolute;
-				left: 3em;
-				top: 3em;
-				opacity: 1;
+				left: 0em;
+				top: 1em;
+				opacity: 0.75;  /* opacity of icons 1 -> 100% */
 			}
 
 			.features section:nth-child(1) .icon {
